@@ -2,15 +2,34 @@
   "name": "@helloncanella/useappstate",
   "version": "0.1.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf lib dist",
+    "build:commonjs": "babel src --out-dir lib",
+    "build:umd": "cross-env FILE_NAME=useAppState webpack",
+    "build:umd:min": "cross-env NODE_ENV=production npm run build:umd",
+    "build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min",
+    "lint": "eslint src --ext .js,.jsx"
   },
-  "author": "",
+  "author": "@helloncanella",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5"
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "rimraf": "^3.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }
