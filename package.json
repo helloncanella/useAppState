@@ -34,6 +34,7 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "1.x",
     "jest": "^24.9.0",
+    "jest-bamboo-formatter": "^1.0.1",
     "rimraf": "^3.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
@@ -48,5 +49,11 @@
     "react": "^16.9.0",
     "react-test-renderer": "^16.9.0",
     "waait": "^1.0.5"
+  },
+  "jest": {
+    "testResultsProcessor": "./node_modules/jest-bamboo-formatter",
+    "watchPathIgnorePatterns": [
+      "<rootDir>/jest.json"
+    ]
   }
 }

@@ -28,3 +28,25 @@ it("renders without error", async () => {
   const p = component.root.findByType("p")
   expect(p.children).toContain("Buck is a poodle")
 })
+it("renders without error", async () => {
+  const dogMock = {
+    request: {
+      query: GET_DOG_QUERY,
+      variables: { name: "Buck" }
+    },
+    result: {
+      data: { dog: { id: 1, name: "Buck", breed: "poodle" } }
+    }
+  }
+
+  const component = renderer.create(
+    <MockedProvider mocks={[dogMock]} addTypename={false}>
+      <Dog name="Buck" />
+    </MockedProvider>
+  )
+
+  await wait(0) // wait for response
+
+  const p = component.root.findByType("p")
+  expect(p.children).toContain("Buck is a poodle")
+})

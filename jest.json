@@ -1,0 +1,644 @@
+{
+  "stats": {
+    "tests": 1,
+    "passes": 1,
+    "failures": 0,
+    "duration": 403,
+    "start": "2019-09-07T20:25:26.814Z",
+    "end": "2019-09-07T20:25:27.217Z"
+  },
+  "failures": [],
+  "passes": [
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1681,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 995,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 366,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 361,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 460,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 404,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 466,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 328,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 323,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 328,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 438,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 387,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 399,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 333,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 294,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 295,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 294,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 334,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 403,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 434,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 404,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 381,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 396,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 302,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 271,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 291,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 311,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 362,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 344,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 339,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 393,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 434,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 321,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 966,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 375,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 535,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 388,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 298,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1245,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1620,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1010,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1311,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 875,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 285,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 450,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 680,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 349,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 328,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 282,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 271,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 402,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 318,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 314,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 306,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 344,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 323,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 296,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 361,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 442,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 420,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 313,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 767,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 940,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 479,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 391,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 310,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 346,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 318,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 310,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 285,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 338,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 559,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 357,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 470,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 310,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 494,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 607,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 505,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 916,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 391,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 370,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 612,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 772,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 2235,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1572,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1313,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1323,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1081,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1233,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1046,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1329,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1047,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 1260,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 998,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 447,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 291,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 324,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 343,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 309,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 349,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 342,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 289,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 318,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 443,
+      "errorCount": 0
+    },
+    {
+      "title": "values passed to setter is broadcasted to all components",
+      "fullTitle": " values passed to setter is broadcasted to all components",
+      "duration": 386,
+      "errorCount": 0
+    }
+  ],
+  "skipped": []
+}
