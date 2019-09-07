@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watch",
     "clean": "rimraf lib dist",
     "build:commonjs": "babel src --out-dir lib",
     "build:umd": "cross-env FILE_NAME=useAppState webpack",
@@ -17,19 +17,36 @@
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-eslint": "^10.0.3",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "1.x",
+    "@typescript-eslint/parser": "1.x",
+    "babel-eslint": "10.x",
+    "babel-jest": "^24.9.0",
     "cross-env": "^5.2.0",
-    "eslint": "^6.3.0",
+    "eslint": "6.x",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3",
+    "eslint-config-react-app": "^5.0.1",
+    "eslint-plugin-flowtype": "3.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "1.x",
+    "jest": "^24.9.0",
     "rimraf": "^3.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
+    "@apollo/react-hooks": "^3.1.0",
+    "@apollo/react-testing": "^3.1.0",
+    "apollo-boost": "^0.4.4",
+    "graphql": "^14.5.4",
+    "graphql-tag": "^2.10.1",
+    "lodash": "^4.17.15",
+    "react": "^16.9.0",
+    "react-test-renderer": "^16.9.0",
+    "waait": "^1.0.5"
   }
 }
