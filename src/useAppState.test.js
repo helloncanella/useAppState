@@ -1,46 +1,21 @@
 import { MockedProvider } from "@apollo/react-testing"
 import React from "react"
-import { act, create } from "react-test-renderer"
 import useAppState from "."
 import gql from "graphql-tag"
-import wait from "waait"
+import { mount } from "./test-utils/enzymeMounting"
 
-const QUERY = gql`
-  query {
-    pressCount @client
-  }
-`
+describe("useAppState", () => {
+  test("it allows communication between two isolated components", async () => {
+    const valueA = ""
+    const setValueInB = Math.random() + ""
 
-function Counter({ className }) {
-  const [pressCount] = useAppState({ query: QUERY })
-  return <p className={`label-${className}`}>{pressCount || 0}</p>
-}
+    function Hello() {
+      return <h1>Hello</h1>
+    }
 
-function AddOneButton() {
-  const [pressCount, changeCount] = useAppState({ query: QUERY })
-  const addOne = () => changeCount((pressCount || 0) + 1)
+    console.log(mount(<Hello></Hello>).debug())
 
-  return <button onClick={addOne}>Change Count</button>
-}
-
-let component
-
-test("values passed to setter is broadcasted to all components", async () => {
-  await act(async () => {
-    component = create(
-      <MockedProvider mocks={[]} addTypename={false}>
-        <div>
-          {/* <Counter className="A"></Counter>
-          <Counter className="B"></Counter>
-          <AddOneButton></AddOneButton> */}
-        </div>
-      </MockedProvider>
-    )
+    expect(valueA).toBe(setValueInB)
   })
-
-  // console.log(component.root.findByType(Counter))
-  // console.log()
-
-  // expect(true).toBe(true)
-  // console.log(root.toJSON())
+  test("different variables controls different states", async () => {})
 })

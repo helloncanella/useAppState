@@ -25,6 +25,7 @@
     "babel-eslint": "10.x",
     "babel-jest": "^24.9.0",
     "cross-env": "^5.2.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "6.x",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-react-app": "^5.0.1",
@@ -33,7 +34,6 @@
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "1.x",
-    "jest": "^24.9.0",
     "jest-bamboo-formatter": "^1.0.1",
     "rimraf": "^3.0.0",
     "webpack": "^4.39.3",
@@ -43,17 +43,13 @@
     "@apollo/react-hooks": "^3.1.0",
     "@apollo/react-testing": "^3.1.0",
     "apollo-boost": "^0.4.4",
+    "enzyme": "^3.10.0",
     "graphql": "^14.5.4",
     "graphql-tag": "^2.10.1",
+    "jest": "^24.9.0",
     "lodash": "^4.17.15",
     "react": "^16.9.0",
-    "react-test-renderer": "^16.9.0",
+    "react-dom": "^16.9.0",
     "waait": "^1.0.5"
-  },
-  "jest": {
-    "testResultsProcessor": "./node_modules/jest-bamboo-formatter",
-    "watchPathIgnorePatterns": [
-      "<rootDir>/jest.json"
-    ]
   }
 }
