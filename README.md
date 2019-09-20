@@ -12,7 +12,7 @@ It was conceived to offer the same dev's experience provided by React's `useStat
 
 Imagine the situation where we need to open and close a floating menu.
 
-A simple scenario would be the necessity to control its openness from a component, and access its state (`open` and `close`) from another - what might be the menu itself.
+A simple scenario would be the necessity to control its openness from a component, and access its state (`open` and `close`) from another.
 
 ```js
 const OPENNESS = gql`
@@ -22,15 +22,14 @@ const OPENNESS = gql`
 `
 
 function GenericComponent() {
-  const [isOpen, setIsOpen] =  useAppState({query: OPENNESS})
-  return <button onClick={()=>}>{isOpen ? "close" : "open"}</button>
+  const [isOpen, setIsOpen] = useAppState({ query: OPENNESS })
+  const toggle = () => setIsOpen(!isOpen)
+  return <button onClick={toggle}>{isOpen ? "close" : "open"}</button>
 }
 
 function Menu() {
-  const [isOpen, setIsOpen] =  useAppState({query: OPENNESS})
-
-  if(!isOpen) return null
-
+  const [isOpen, setIsOpen] = useAppState({ query: OPENNESS })
+  if (!isOpen) return null
   return <MenuComponent />
 }
 ```
