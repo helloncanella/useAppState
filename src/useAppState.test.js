@@ -1,13 +1,12 @@
-import { MockedProvider, wait } from "@apollo/react-testing"
+import { wait } from "@apollo/react-testing"
 import React from "react"
-import useAppState from "."
+import useAppState from "./useAppState"
 import gql from "graphql-tag"
 import { mount } from "./test-utils/enzymeMounting"
-import { useQuery } from "@apollo/react-hooks"
 
 const QUERY = gql`
-  query Any {
-    hello @client
+  query Any($label: String) {
+    hello(label: $label) @client
   }
 `
 
@@ -52,5 +51,52 @@ describe("useAppState", () => {
 
     expect(valueA).toBe(setValueInB)
   })
-  test("different variables controls different states", async () => {})
+
+  test("different variables controls different states", async () => {
+    function Component() {
+      const [valueA, setValueA] = useAppState({
+        query: QUERY,
+        variables: { label: "A" }
+      })
+      const [valueB, setValueB] = useAppState({
+        query: QUERY,
+        variables: { label: "B" }
+      })
+
+      const onChange = fn => e => {
+        fn(e.target.value)
+      }
+
+      return (
+        <>
+          <input
+            data-label={"A"}
+            value={valueA}
+            onChange={onChange(setValueA)}
+          />
+          <input
+            data-label={"B"}
+            value={valueB}
+            onChange={onChange(setValueB)}
+          />
+        </>
+      )
+    }
+
+    const component = mount(<Component></Component>)
+
+    const getEl = label => component.find(`[data-label='${label}']`)
+
+    ;["A", "B"].forEach(label =>
+      getEl(label).prop("onChange")({ target: { value: Math.random() + "" } })
+    )
+
+    await wait(0)
+    component.update()
+
+    const valueA = getEl("A").prop("value")
+    const valueB = getEl("B").prop("value")
+
+    expect(valueB).not.toBe(valueA)
+  })
 })
