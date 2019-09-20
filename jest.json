@@ -3,9 +3,9 @@
     "tests": 2,
     "passes": 2,
     "failures": 0,
-    "duration": 5853,
-    "start": "2019-09-20T12:52:04.134Z",
-    "end": "2019-09-20T12:52:09.987Z"
+    "duration": 4992,
+    "start": "2019-09-20T13:43:49.835Z",
+    "end": "2019-09-20T13:43:54.827Z"
   },
   "failures": [
     {
@@ -157,6 +157,18 @@
       "title": "different variables controls different states",
       "fullTitle": "useAppState different variables controls different states",
       "duration": 3509,
+      "errorCount": 0
+    },
+    {
+      "title": "it allows communication between two isolated components",
+      "fullTitle": "useAppState it allows communication between two isolated components",
+      "duration": 3132,
+      "errorCount": 0
+    },
+    {
+      "title": "different variables controls different states",
+      "fullTitle": "useAppState different variables controls different states",
+      "duration": 3132,
       "errorCount": 0
     }
   ],

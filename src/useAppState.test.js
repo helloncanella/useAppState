@@ -58,6 +58,7 @@ describe("useAppState", () => {
         query: QUERY,
         variables: { label: "A" }
       })
+
       const [valueB, setValueB] = useAppState({
         query: QUERY,
         variables: { label: "B" }

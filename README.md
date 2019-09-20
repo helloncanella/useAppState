@@ -1,6 +1,6 @@
 # useAppState
 
-Control the whole app's state with the facility of an `useState`.
+Control the whole app's state with the ease of an `useState`.
 
 ## Introduction
 
@@ -10,7 +10,7 @@ It was conceived to offer the same dev's experience provided by React's `useStat
 
 ## Example
 
-Imagine the situation where we need to open and close a floating menu.
+Take the situation where we need to open and close a floating menu.
 
 A simple scenario would be the necessity to control its openness from a component, and access its state (`open` and `close`) from another.
 
@@ -21,7 +21,7 @@ const OPENNESS = gql`
   }
 `
 
-function GenericComponent() {
+function ToggleButton() {
   const [isOpen, setIsOpen] = useAppState({ query: OPENNESS })
   const toggle = () => setIsOpen(!isOpen)
   return <button onClick={toggle}>{isOpen ? "close" : "open"}</button>
