@@ -106,11 +106,11 @@ Observe the use of variables. With this strategy, we are able to differentiate t
 
 ## Updating cached network's data
 
-[Check the live version](https://codesandbox.io/embed/todolist-kyjel)
-
 The previous examples focused on the manipulation of data tagged by directive `@client`. However, `useAppState` can be used to manipulate any kind of data stored in the cache, including what is fetched from the server or any other external source.
 
 ### Example: update a list
+
+[Check the live version](https://codesandbox.io/embed/todolist-kyjel)
 
 ```jsx
 const LIST = gql`
