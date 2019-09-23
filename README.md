@@ -2,45 +2,6 @@
 
 Control the whole app's state with the ease of an `useState`.
 
-## Installation
-
-### "I have an apollo project setup"
-
-1. Install `useAppState` and `@apollo/react-hooks`.
-
-```
- npm --save install @helloncanella/useAppState @apollo/react-hooks
-```
-
-2. Wrap the root of your application with `ApolloProvider`, exported by `@apollo/react-hooks`
-
-```js
-import React from "react"
-import { render } from "react-dom"
-
-import { ApolloProvider } from "@apollo/react-hooks"
-
-const App = () => (
-  <ApolloProvider client={client}>
-    <div>
-      <h2>My apollo App 🚀</h2>
-    </div>
-  </ApolloProvider>
-)
-
-render(<App />, document.getElementById("root"))
-```
-
-### "I don't have an apollo project setup"
-
-1. Install `useAppState`
-
-```
- npm --save install @helloncanella/useAppState
-```
-
-2. Follow the steps described [here](https://www.apollographql.com/docs/react/essentials/get-started/)
-
 ## Introduction
 
 This hook aims to work as an utility to simplify state management, on Apollo Client backed projects.
@@ -176,3 +137,42 @@ Internally `useAppState` uses the hook `useQuery`, [released](https://blog.apoll
 As long as we are only interested in the cache manipulation, the `useQuery`'s options parameter `fetchPolicy` receives the value `cache-only`.
 
 The source code involves one file with few lines and it is available [here](https://github.com/helloncanella/useAppState/blob/master/src/useAppState.js).
+
+## Installation
+
+### 1. "I have an apollo project setup"
+
+1. Install `useAppState` and `@apollo/react-hooks`.
+
+```
+ npm --save install @helloncanella/useAppState @apollo/react-hooks
+```
+
+2. Wrap the root of your application with `ApolloProvider`, exported by `@apollo/react-hooks`
+
+```js
+import React from "react"
+import { render } from "react-dom"
+
+import { ApolloProvider } from "@apollo/react-hooks"
+
+const App = () => (
+  <ApolloProvider client={client}>
+    <div>
+      <h2>My apollo App 🚀</h2>
+    </div>
+  </ApolloProvider>
+)
+
+render(<App />, document.getElementById("root"))
+```
+
+### 2. "I don't have an apollo project setup"
+
+1. Install `useAppState`
+
+```
+ npm --save install @helloncanella/useAppState
+```
+
+2. Follow the steps described [here](https://www.apollographql.com/docs/react/essentials/get-started/)

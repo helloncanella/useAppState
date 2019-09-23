@@ -3,9 +3,9 @@
     "tests": 4,
     "passes": 4,
     "failures": 0,
-    "duration": 4430,
-    "start": "2019-09-23T03:11:22.815Z",
-    "end": "2019-09-23T03:11:27.245Z"
+    "duration": 4275,
+    "start": "2019-09-23T03:45:19.513Z",
+    "end": "2019-09-23T03:45:23.788Z"
   },
   "failures": [],
   "passes": [
@@ -31,6 +31,54 @@
       "title": "different variables controls different states",
       "fullTitle": "useAppState different variables controls different states",
       "duration": 2860,
+      "errorCount": 0
+    },
+    {
+      "title": "it allows communication between two isolated components",
+      "fullTitle": "useAppState it allows communication between two isolated components",
+      "duration": 2276,
+      "errorCount": 0
+    },
+    {
+      "title": "different variables controls different states",
+      "fullTitle": "useAppState different variables controls different states",
+      "duration": 2276,
+      "errorCount": 0
+    },
+    {
+      "title": "it allows communication between two isolated components",
+      "fullTitle": "useAppState it allows communication between two isolated components",
+      "duration": 2288,
+      "errorCount": 0
+    },
+    {
+      "title": "different variables controls different states",
+      "fullTitle": "useAppState different variables controls different states",
+      "duration": 2288,
+      "errorCount": 0
+    },
+    {
+      "title": "it allows communication between two isolated components",
+      "fullTitle": "useAppState it allows communication between two isolated components",
+      "duration": 2455,
+      "errorCount": 0
+    },
+    {
+      "title": "different variables controls different states",
+      "fullTitle": "useAppState different variables controls different states",
+      "duration": 2455,
+      "errorCount": 0
+    },
+    {
+      "title": "it allows communication between two isolated components",
+      "fullTitle": "useAppState it allows communication between two isolated components",
+      "duration": 2525,
+      "errorCount": 0
+    },
+    {
+      "title": "different variables controls different states",
+      "fullTitle": "useAppState different variables controls different states",
+      "duration": 2525,
       "errorCount": 0
     }
   ],
