@@ -2,7 +2,7 @@
   "name": "@helloncanella/useappstate",
   "version": "0.1.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "lib/useAppState.js",
   "scripts": {
     "test": "jest --watch",
     "clean": "rimraf lib dist",
