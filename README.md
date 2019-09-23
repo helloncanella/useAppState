@@ -2,6 +2,12 @@
 
 Control the whole app's state with the ease of an `useState`.
 
+## Installation
+
+```
+  npm --save install @helloncanella/useAppState
+```
+
 ## Introduction
 
 This hook aims to work as an utility to simplify state management, on Apollo Client backed projects.
@@ -121,7 +127,7 @@ const LIST = gql`
   }
 `
 
-const [list, setList] = useAppCache({
+const [list, setList] = useAppState({
   query: LIST,
   variables: { date: today }
 })
@@ -139,5 +145,3 @@ Internally `useAppState` uses the hook `useQuery`, [released](https://blog.apoll
 As long as we are only interested in the cache manipulation, the `useQuery`'s options parameter `fetchPolicy` receives the value `cache-only`.
 
 The source code involves one file with few lines and it is available [here](https://github.com/helloncanella/useAppState/blob/master/src/useAppState.js).
-
-## Warning
