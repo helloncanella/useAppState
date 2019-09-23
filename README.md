@@ -14,7 +14,7 @@ Take the situation where we need to open and close a floating menu.
 
 A simple scenario would be the necessity to control its openness from a component, and access its state (`open` and `close`) from another.
 
-```js
+```jsx
 const OPENNESS = gql`
   query Openness {
     isOpen @client
@@ -40,7 +40,7 @@ Here we are using the directive `@client`, that instructs apollo to not forward 
 
 You may want to assign variables to your queries. In that case, do:
 
-```js
+```jsx
 useQuery({
   query: A_QUERY,
   variables: { variableA: "hello", variableB: "world" }
@@ -85,7 +85,7 @@ function AddOneButton({ label }) {
 
 Above we opt to isolate the manipulation of `useAppState` in a custom hook, we called `useCount`, that may be like below.
 
-```js
+```jsx
 function useCount({ label }) {
   const COUNT = gql`
     query Count($label: ID) {
@@ -110,7 +110,7 @@ The previous examples focused on the manipulation of data tagged by directive `@
 
 ### Example: update a list
 
-```js
+```jsx
 const LIST = gql`
   query List($date: DateTime!) {
     list(date: $date) {
@@ -134,4 +134,6 @@ setList([
 
 ## Under the hood.
 
-Internally `useAppState` uses the hook `useQuery`, [released](https://blog.apollographql.com/apollo-client-now-with-react-hooks-676d116eeae2) in August, 2019, to get the state value, while wraps by its setter a call to `client.writeQuery`.
+Internally `useAppState` uses the hook `useQuery`, [released](https://blog.apollographql.com/apollo-client-now-with-react-hooks-676d116eeae2) in August, 2019, to reactively get the state value. At same time, wraps by its setter a call to `client.writeQuery`.
+
+As long as we only interested in the cache manipulation, `cache-only` was the value assigned to `fetchPolicy`, passed as parameter to `useQuery`.
