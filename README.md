@@ -53,7 +53,7 @@ Let's show how we can manage the state of two counters, A and B, with the use of
 
 Here, our rendered component might have the following structure:
 
-```js
+```jsx
 <>
   <div className="A">
     <Counter label="A"></Counter>
@@ -69,7 +69,7 @@ Here, our rendered component might have the following structure:
 
 `Counter` is responsible for the rendering of the count, while `AddOneButton` provides a button that simply adds one to this amount, once clicked. Here, the `label` prop will be used only to differentiate the two counters.
 
-```js
+```jsx
 function Counter({ label }) {
   const { count } = useCount({ label })
   return <p>{count || 0}</p>
