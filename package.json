@@ -17,6 +17,13 @@
   },
   "author": "@helloncanella",
   "license": "ISC",
+  "keywords": [
+    "state",
+    "apollo",
+    "apollo-client",
+    "graphql",
+    "app-state-management"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
