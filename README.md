@@ -132,6 +132,6 @@ setList([
 ])
 ```
 
-# Under the hood
+### Under the hood.
 
-In
+Internally `useAppState` uses the hook `useQuery`, [released](https://blog.apollographql.com/apollo-client-now-with-react-hooks-676d116eeae2) in August, 2019, to get the state value, while wraps by its setter a call to `client.writeQuery`.
