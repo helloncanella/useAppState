@@ -21,8 +21,7 @@
     "state",
     "apollo",
     "apollo-client",
-    "graphql",
-    "app-state-management"
+    "graphql"
   ],
   "devDependencies": {
     "@babel/cli": "^7.5.5",

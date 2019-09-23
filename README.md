@@ -49,6 +49,8 @@ useQuery({
 
 ### Example: Manage the state of two counters
 
+[Check the live version](https://codesandbox.io/embed/late-surf-wtjpb)
+
 Let's show how we can manage the state of two counters, A and B, with the use of variables.
 
 Here, our rendered component might have the following structure:
@@ -65,7 +67,7 @@ Here, our rendered component might have the following structure:
 </div>
 ```
 
-`Counter` is responsible for the rendering of the count, while `AddOneButton` provides a button that simply adds one to this amount, once clicked. Here, the `label` prop will be used only to differentiate the two counters.
+`Counter` is responsible for the rendering of the count, while `AddOneButton` provides a button that simply adds one to this amount, once clicked. Here, the prop `label` will be used only to differentiate the two counters.
 
 ```jsx
 function Counter({ label }) {
@@ -74,7 +76,7 @@ function Counter({ label }) {
 }
 
 function AddOneButton({ label }) {
-  const { setCount } = useCount({ label })
+  const { count, setCount } = useCount({ label })
   const addOne = () => setCount((count || 0) + 1)
 
   return <button onClick={addOne}>Add one</button>
@@ -104,16 +106,18 @@ Observe the use of variables. With this strategy, we are able to differentiate t
 
 ## Updating cached network's data
 
+[Check the live version](https://codesandbox.io/embed/todolist-kyjel)
+
 The previous examples focused on the manipulation of data tagged by directive `@client`. However, `useAppState` can be used to manipulate any kind of data stored in the cache, including what is fetched from the server or any other external source.
 
 ### Example: update a list
 
 ```jsx
 const LIST = gql`
-  query List($date: DateTime!) {
-    list(date: $date) {
+  query TodoList($category: String!) {
+    todoList(category: $category) {
       id
-      name
+      description
       timestamp
     }
   }
@@ -121,12 +125,17 @@ const LIST = gql`
 
 const [list, setList] = useAppState({
   query: LIST,
-  variables: { date: today }
+  variables: { category: "to-be-done" }
 })
 
 setList([
   ...list,
-  { id: "1234", name: "Item's name", timestamp: new Date().getTime() }
+  {
+    id: "1234",
+    description: "Take the cat to the vet 🐱 🏥‍ ",
+    timestamp: new Date().getTime(),
+    __typename: "Item"
+  }
 ])
 ```
 
