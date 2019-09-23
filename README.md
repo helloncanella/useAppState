@@ -134,6 +134,6 @@ setList([
 
 ## Under the hood.
 
-Internally `useAppState` uses the hook `useQuery`, [released](https://blog.apollographql.com/apollo-client-now-with-react-hooks-676d116eeae2) in August, 2019, to reactively get the state value. At same time, wraps by its setter a call to `client.writeQuery`.
+Internally `useAppState` uses the hook `useQuery`, [released](https://blog.apollographql.com/apollo-client-now-with-react-hooks-676d116eeae2) in August, 2019, to reactively get the state value. At same time, it is wrapped by its setter a call to `client.writeQuery`.
 
-As long as we only interested in the cache manipulation, `cache-only` was the value assigned to `fetchPolicy`, passed as parameter to `useQuery`.
+As long as we are only interested in the cache manipulation, `cache-only` was the value assigned to the parameter `fetchPolicy`, passed to `useQuery`'s options argument.
