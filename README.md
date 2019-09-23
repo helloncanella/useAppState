@@ -179,7 +179,7 @@ render(<App />, document.getElementById("root"))
 
 # API
 
-`useQuery(options)`
+`useAppState(options)`
 
 | Option    |          Type          | Description                                                                        |
 | --------- | :--------------------: | ---------------------------------------------------------------------------------- |
