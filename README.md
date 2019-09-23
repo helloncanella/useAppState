@@ -81,7 +81,7 @@ function AddOneButton({ label }) {
 }
 ```
 
-Above we opt to isolate the manipulation of `useAppState` in a custom hook, we called `useCount`, that may be like below.
+We opt to isolate the manipulation of `useAppState` in a custom hook, we called `useCount`, that may be like below.
 
 ```jsx
 function useCount({ label }) {
