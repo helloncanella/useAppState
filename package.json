@@ -1,5 +1,5 @@
 {
-  "name": "@hellonc3nella/useappstate",
+  "name": "@helloncanella/useappstate",
   "version": "0.2.4",
   "description": "Manage whole app state with the ease of an useState",
   "main": "lib/useAppState.js",
