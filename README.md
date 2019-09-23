@@ -177,7 +177,7 @@ render(<App />, document.getElementById("root"))
 
 - Follow the steps described [here](https://www.apollographql.com/docs/react/essentials/get-started/)
 
-# API
+## API
 
 `useAppState(options)`
 
