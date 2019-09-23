@@ -8,7 +8,7 @@ This hook aims to work as an utility to simplify state management, on Apollo Cli
 
 It was conceived to offer the same dev's experience provided by React's `useState` hook.
 
-## Simple example
+## Usage
 
 Take the situation where we need to open and close a floating menu.
 
@@ -142,13 +142,13 @@ The source code involves one file with few lines and it is available [here](http
 
 ### 1. "I have an apollo project setup"
 
-1. Install `useAppState` and `@apollo/react-hooks`.
+- Install `useAppState` and `@apollo/react-hooks`.
 
 ```
  npm --save install @helloncanella/useAppState @apollo/react-hooks
 ```
 
-2. Wrap the root of your application with `ApolloProvider`, exported by `@apollo/react-hooks`
+- Wrap the root of your application with `ApolloProvider`, exported by `@apollo/react-hooks`
 
 ```js
 import React from "react"
@@ -169,10 +169,19 @@ render(<App />, document.getElementById("root"))
 
 ### 2. "I don't have an apollo project setup"
 
-1. Install `useAppState`
+- Install `useAppState`
 
 ```
  npm --save install @helloncanella/useAppState
 ```
 
-2. Follow the steps described [here](https://www.apollographql.com/docs/react/essentials/get-started/)
+- Follow the steps described [here](https://www.apollographql.com/docs/react/essentials/get-started/)
+
+# API
+
+`useQuery(options)`
+
+| Option    |          Type          | Description                                                                        |
+| --------- | :--------------------: | ---------------------------------------------------------------------------------- |
+| query     |      DocumentNode      | A GraphQL query document parsed into an AST by graphql-tag. _(required)_           |
+| variables | { [key: string]: any } | An object containing all of the variables your query needs to execute _(optional)_ |
