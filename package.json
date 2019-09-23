@@ -1,7 +1,7 @@
 {
   "name": "@hellonc3nella/useappstate",
   "version": "0.2.4",
-  "description": "",
+  "description": "Manage whole app state with the ease of an useState",
   "main": "lib/useAppState.js",
   "repository": {
     "url": "https://github.com/helloncanella/useAppState"
