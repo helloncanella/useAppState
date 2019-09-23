@@ -4,9 +4,42 @@ Control the whole app's state with the ease of an `useState`.
 
 ## Installation
 
+### "I have an apollo project setup"
+
+1. Install `useAppState` and `@apollo/react-hooks`.
+
 ```
-  npm --save install @helloncanella/useAppState
+ npm --save install @helloncanella/useAppState @apollo/react-hooks
 ```
+
+2. Wrap the root of your application with `ApolloProvider`, exported by `@apollo/react-hooks`
+
+```js
+import React from "react"
+import { render } from "react-dom"
+
+import { ApolloProvider } from "@apollo/react-hooks"
+
+const App = () => (
+  <ApolloProvider client={client}>
+    <div>
+      <h2>My apollo App 🚀</h2>
+    </div>
+  </ApolloProvider>
+)
+
+render(<App />, document.getElementById("root"))
+```
+
+### "I don't have an apollo project setup"
+
+1. Install `useAppState`
+
+```
+ npm --save install @helloncanella/useAppState
+```
+
+2. Follow the steps described [here](https://www.apollographql.com/docs/react/essentials/get-started/)
 
 ## Introduction
 
@@ -60,17 +93,15 @@ Let's show how we can manage the state of two counters, A and B, with the use of
 Here, our rendered component might have the following structure:
 
 ```jsx
-<>
-  <div className="A">
-    <Counter label="A"></Counter>
-    <AddOneButton label="A"></AddOneButton>
-  </div>
+<div className="counter-A">
+  <Counter label="A"></Counter>
+  <AddOneButton label="A"></AddOneButton>
+</div>
 
-  <div className="B">
-    <Counter label="B"></Counter>
-    <AddOneButton label="B"></AddOneButton>
-  </div>
-</>
+<div className="counter-B">
+  <Counter label="B"></Counter>
+  <AddOneButton label="B"></AddOneButton>
+</div>
 ```
 
 `Counter` is responsible for the rendering of the count, while `AddOneButton` provides a button that simply adds one to this amount, once clicked. Here, the `label` prop will be used only to differentiate the two counters.

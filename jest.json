@@ -1,174 +1,36 @@
 {
   "stats": {
-    "tests": 2,
-    "passes": 2,
+    "tests": 4,
+    "passes": 4,
     "failures": 0,
-    "duration": 4992,
-    "start": "2019-09-20T13:43:49.835Z",
-    "end": "2019-09-20T13:43:54.827Z"
+    "duration": 4430,
+    "start": "2019-09-23T03:11:22.815Z",
+    "end": "2019-09-23T03:11:27.245Z"
   },
-  "failures": [
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 2911,
-      "errorCount": 1,
-      "error": "1 failure: \n1 failed: Error: Missing query\n    at useAppState (/Users/helloncanella/Dropbox/useAppState/src/useAppState.js:5:31)\n    at _ref5 (/Users/helloncanella/Dropbox/useAppState/src/useAppState.test.js:57:35)\n    at renderWithHooks (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:15108:18)\n    at mountIndeterminateComponent (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:17342:13)\n    at beginWork$1 (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:18486:16)\n    at HTMLUnknownElement.callCallback (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:347:14)\n    at invokeEventListeners (/Users/helloncanella/Dropbox/useAppState/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:193:27)\n    at HTMLUnknownElementImpl._dispatch (/Users/helloncanella/Dropbox/useAppState/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:119:9)\n    at HTMLUnknownElementImpl.dispatchEvent (/Users/helloncanella/Dropbox/useAppState/node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:82:17)\n    at HTMLUnknownElementImpl.dispatchEvent (/Users/helloncanella/Dropbox/useAppState/node_modules/jsdom/lib/jsdom/living/nodes/HTMLElement-impl.js:30:27)\n    at HTMLUnknownElement.dispatchEvent (/Users/helloncanella/Dropbox/useAppState/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:157:21)\n    at Object.invokeGuardedCallbackDev (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:397:16)\n    at invokeGuardedCallback (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:454:31)\n    at beginWork$$1 (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:23217:7)\n    at performUnitOfWork (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:22211:12)\n    at workLoopSync (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:22185:22)\n    at renderRoot (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:21878:11)\n    at scheduleUpdateOnFiber (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:21419:22)\n    at scheduleRootUpdate (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:24319:3)\n    at updateContainerAtExpirationTime (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:24347:10)\n    at updateContainer (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:24436:10)\n    at /Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:24963:7\n    at unbatchedUpdates (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:21687:12)\n    at legacyRenderSubtreeIntoContainer (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:24962:5)\n    at Object.render (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:25042:12)\n    at render (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:429:26)\n    at fn (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:346:37)\n    at batchedUpdates$1 (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom.development.js:21643:12)\n    at act (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1002:14)\n    at Object.act (/Users/helloncanella/Dropbox/useAppState/node_modules/react-dom/cjs/react-dom-test-utils.development.js:1418:12)\n    at act (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:346:13)\n    at Object.wrapAct [as render] (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:415:16)\n    at new render (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/ReactWrapper.js:115:16)\n    at mount (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/mount.js:10:10)\n    at mount (/Users/helloncanella/Dropbox/useAppState/src/test-utils/enzymeMounting.js:9:27)\n    at _callee2$ (/Users/helloncanella/Dropbox/useAppState/src/useAppState.test.js:80:23)\n    at tryCatch (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:45:40)\n    at Generator.invoke [as _invoke] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:271:22)\n    at Generator.prototype.(anonymous function) [as next] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:97:21)\n    at asyncGeneratorStep (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n    at _next (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n    at /Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n    at new Promise (<anonymous>)\n    at Object.<anonymous> (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:21:12)\n    at Object.asyncJestTest (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)\n    at resolve (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:43:12)\n    at new Promise (<anonymous>)\n    at mapper (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:26:19)\n    at promise.then (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:73:41)\n    at <anonymous>"
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 2542,
-      "errorCount": 1,
-      "error": "1 failure: \n1 failed: Error: Failed to parse selector: [data-label=A]\n    at safelyGenerateTokens (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/selectors.js:68:11)\n    at safelyGenerateTokens (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/selectors.js:395:20)\n    at reduceTreeBySelector (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/selectors.js:457:34)\n    at Array.map (<anonymous>)\n    at map (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/selectors.js:457:25)\n    at ReactWrapper.find (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/ReactWrapper.js:556:22)\n    at find (/Users/helloncanella/Dropbox/useAppState/src/useAppState.test.js:89:38)\n    at getEl (/Users/helloncanella/Dropbox/useAppState/src/useAppState.test.js:91:16)\n    at tryCatch (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:45:40)\n    at Generator.invoke [as _invoke] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:271:22)\n    at Generator.prototype.(anonymous function) [as next] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:97:21)\n    at asyncGeneratorStep (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n    at _next (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n    at /Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n    at new Promise (<anonymous>)\n    at Object.<anonymous> (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:21:12)\n    at Object.asyncJestTest (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)\n    at resolve (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:43:12)\n    at new Promise (<anonymous>)\n    at mapper (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:26:19)\n    at promise.then (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:73:41)\n    at <anonymous>"
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 2848,
-      "errorCount": 1,
-      "error": "1 failure: \n1 failed: Error: Failed to parse selector: [data-label='A]'\n    at safelyGenerateTokens (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/selectors.js:68:11)\n    at safelyGenerateTokens (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/selectors.js:395:20)\n    at reduceTreeBySelector (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/selectors.js:457:34)\n    at Array.map (<anonymous>)\n    at map (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/selectors.js:457:25)\n    at ReactWrapper.find (/Users/helloncanella/Dropbox/useAppState/node_modules/enzyme/src/ReactWrapper.js:556:22)\n    at find (/Users/helloncanella/Dropbox/useAppState/src/useAppState.test.js:89:38)\n    at getEl (/Users/helloncanella/Dropbox/useAppState/src/useAppState.test.js:91:16)\n    at tryCatch (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:45:40)\n    at Generator.invoke [as _invoke] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:271:22)\n    at Generator.prototype.(anonymous function) [as next] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:97:21)\n    at asyncGeneratorStep (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n    at _next (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n    at /Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n    at new Promise (<anonymous>)\n    at Object.<anonymous> (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:21:12)\n    at Object.asyncJestTest (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)\n    at resolve (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:43:12)\n    at new Promise (<anonymous>)\n    at mapper (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:26:19)\n    at promise.then (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:73:41)\n    at <anonymous>"
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 2392,
-      "errorCount": 1,
-      "error": "1 failure: \n1 failed: Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32mundefined\u001b[39m\n    at toBe (/Users/helloncanella/Dropbox/useAppState/src/useAppState.test.js:104:24)\n    at tryCatch (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:45:40)\n    at Generator.invoke [as _invoke] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:271:22)\n    at Generator.prototype.(anonymous function) [as next] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:97:21)\n    at asyncGeneratorStep (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n    at _next (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n    at /Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:32:7\n    at new Promise (<anonymous>)\n    at Object.<anonymous> (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:21:12)\n    at Object.asyncJestTest (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)\n    at resolve (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:43:12)\n    at new Promise (<anonymous>)\n    at mapper (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:26:19)\n    at promise.then (/Users/helloncanella/Dropbox/useAppState/node_modules/jest-jasmine2/build/queueRunner.js:73:41)\n    at <anonymous>"
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 2796,
-      "errorCount": 1,
-      "error": "1 failure: \n1 failed: Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: not \u001b[32m\"0.454566277433488\"\u001b[39m\n    at toBe (/Users/helloncanella/Dropbox/useAppState/src/useAppState.test.js:107:24)\n    at tryCatch (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:45:40)\n    at Generator.invoke [as _invoke] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:271:22)\n    at Generator.prototype.(anonymous function) [as next] (/Users/helloncanella/Dropbox/useAppState/node_modules/regenerator-runtime/runtime.js:97:21)\n    at asyncGeneratorStep (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)\n    at _next (/Users/helloncanella/Dropbox/useAppState/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)\n    at <anonymous>"
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "it allows communication between two isolated components",
       "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2911,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2542,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2848,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2537,
+      "duration": 2780,
       "errorCount": 0
     },
     {
       "title": "different variables controls different states",
       "fullTitle": "useAppState different variables controls different states",
-      "duration": 2537,
+      "duration": 2780,
       "errorCount": 0
     },
     {
       "title": "it allows communication between two isolated components",
       "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2997,
+      "duration": 2860,
       "errorCount": 0
     },
     {
       "title": "different variables controls different states",
       "fullTitle": "useAppState different variables controls different states",
-      "duration": 2997,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2571,
-      "errorCount": 0
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 2571,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2408,
-      "errorCount": 0
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 2408,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2392,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2796,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2473,
-      "errorCount": 0
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 2473,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 2494,
-      "errorCount": 0
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 2494,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 3509,
-      "errorCount": 0
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 3509,
-      "errorCount": 0
-    },
-    {
-      "title": "it allows communication between two isolated components",
-      "fullTitle": "useAppState it allows communication between two isolated components",
-      "duration": 3132,
-      "errorCount": 0
-    },
-    {
-      "title": "different variables controls different states",
-      "fullTitle": "useAppState different variables controls different states",
-      "duration": 3132,
+      "duration": 2860,
       "errorCount": 0
     }
   ],
