@@ -55,12 +55,12 @@ Here, our rendered component might have the following structure:
 
 ```js
 <>
-  <div className={classes.wrapper}>
+  <div className="A">
     <Counter label="A"></Counter>
     <AddOneButton label="A"></AddOneButton>
   </div>
 
-  <div className={classes.wrapper}>
+  <div className="B">
     <Counter label="B"></Counter>
     <AddOneButton label="B"></AddOneButton>
   </div>
@@ -104,6 +104,34 @@ function useCount({ label }) {
 
 Observe the use of variables. With this strategy, we are able to differentiate the A's and B's state.
 
-## Managing cached network's data
+## Updating cached network's data
 
-The previous examples focused on the manipulation of data tagged by directive `@client`. However,
+The previous examples focused on the manipulation of data tagged by directive `@client`. However, `useAppState` can be used to manipulate any kind of data stored in the cache, including what is fetched from the server or any other external source.
+
+### Example: update a list
+
+```js
+const LIST = gql`
+  query List($date: DateTime!) {
+    list(date: $date) {
+      id
+      name
+      timestamp
+    }
+  }
+`
+
+const [list, setList] = useAppCache({
+  query: LIST,
+  variables: { date: today }
+})
+
+setList([
+  ...list,
+  { id: "1234", name: "Item's name", timestamp: new Date().getTime() }
+])
+```
+
+# Under the hood
+
+In
