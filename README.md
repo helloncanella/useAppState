@@ -10,6 +10,8 @@ It was conceived to offer the same dev's experience provided by React's `useStat
 
 ## Usage
 
+[Check the live version](https://codesandbox.io/embed/toggling-menu-euqrk)
+
 Take the situation where we need to open and close a floating menu.
 
 A simple scenario would be the necessity to control its openness from a component, and access its state (`open` and `close`) from another.
