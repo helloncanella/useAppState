@@ -43,7 +43,7 @@ Here we are using the directive `@client`, that instructs apollo to not forward 
 You may want to assign variables to your queries. In that case, do:
 
 ```jsx
-useQuery({
+useAppState({
   query: A_QUERY,
   variables: { variableA: "hello", variableB: "world" }
 })
