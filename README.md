@@ -1,13 +1,3 @@
-This hook aims to work as a utility to simplify state management, on Apollo Client backed projects.
-
-It was conceived to offer the same dev's experience provided by React's `useState` hook.
-
-Take the situation where we need to open and close a floating menu.
-
-A simple scenario would be the necessity to control its openness from a component, and access its state (`open` and `close`) from another.
-
-Here we are using the directive `@client`, that instructs apollo not to forward our operation to the server. For further info, refer to the [apollo documentation](https://www.apollographql.com/docs/react/essentials/local-state/).
-
 # useAppState
 
 This hook aims to work as a utility to simplify state management, on Apollo Client backed projects.
