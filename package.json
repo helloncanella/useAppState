@@ -1,6 +1,6 @@
 {
   "name": "@helloncanella/useappstate",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Manage whole app state with the ease of an useState",
   "main": "lib/useAppState.js",
   "repository": {
