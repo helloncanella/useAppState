@@ -1,10 +1,20 @@
+This hook aims to work as a utility to simplify state management, on Apollo Client backed projects.
+
+It was conceived to offer the same dev's experience provided by React's `useState` hook.
+
+Take the situation where we need to open and close a floating menu.
+
+A simple scenario would be the necessity to control its openness from a component, and access its state (`open` and `close`) from another.
+
+Here we are using the directive `@client`, that instructs apollo not to forward our operation to the server. For further info, refer to the [apollo documentation](https://www.apollographql.com/docs/react/essentials/local-state/).
+
 # useAppState
 
-Control the whole app's state with the ease of an `useState`.
+This hook aims to work as a utility to simplify state management, on Apollo Client backed projects.
 
 ## Introduction
 
-This hook aims to work as an utility to simplify state management, on Apollo Client backed projects.
+This hook aims to work as a utility to simplify state management, on Apollo Client backed projects.
 
 It was conceived to offer the same dev's experience provided by React's `useState` hook.
 
@@ -36,14 +46,14 @@ function Menu() {
 }
 ```
 
-Here we are using the directive `@client`, that instructs apollo to not forward our operation to the server. For further info, refer to the [apollo documentation](https://www.apollographql.com/docs/react/essentials/local-state/).
+Here we are using the directive `@client`, that instructs apollo not to forward our operation to the server. For further info, refer to the [apollo documentation](https://www.apollographql.com/docs/react/essentials/local-state/).
 
 ## Variables
 
 You may want to assign variables to your queries. In that case, do:
 
 ```jsx
-useQuery({
+useAppState({
   query: A_QUERY,
   variables: { variableA: "hello", variableB: "world" }
 })
@@ -69,7 +79,7 @@ Here, our rendered component might have the following structure:
 </div>
 ```
 
-`Counter` is responsible for the rendering of the count, while `AddOneButton` provides a button that simply adds one to this amount, once clicked. Here, the prop `label` will be used only to differentiate the two counters.
+`Counter` is responsible for the rendering of the count, while `AddOneButton` provides a button that adds one to this amount, once clicked. Here, the prop `label` will be used only to differentiate the two counters.
 
 ```jsx
 function Counter({ label }) {
@@ -104,11 +114,11 @@ function useCount({ label }) {
 }
 ```
 
-Observe the use of variables. With this strategy, we are able to differentiate the A's and B's state.
+Observe the use of variables. With this strategy, we can differentiate the A's and B's state.
 
 ## Updating cached network's data
 
-The previous examples focused on the manipulation of data tagged by directive `@client`. However, `useAppState` can be used to manipulate any kind of data stored in the cache, including what is fetched from the server or any other external source.
+The previous examples focused on the manipulation of data tagged by directive `@client`. However, `useAppState` can be used to manipulate any data stored in the cache, including what is fetched from the server or any other external source.
 
 ### Example: update a list
 
@@ -116,11 +126,10 @@ The previous examples focused on the manipulation of data tagged by directive `@
 
 ```jsx
 const LIST = gql`
-  query TodoList($category: String!) {
-    todoList(category: $category) {
+  query List($category: String!) {
+    list(category: $category) {
       id
       description
-      timestamp
     }
   }
 `
@@ -130,28 +139,26 @@ const [list, setList] = useAppState({
   variables: { category: "to-be-done" }
 })
 
-setList([
-  ...list,
-  {
-    id: "1234",
-    description: "Take the cat to the vet 🐱 🏥‍ ",
-    timestamp: new Date().getTime(),
-    __typename: "Item"
-  }
-])
+const todo = {
+  id: "1234",
+  description: "Take the cat to the vet 🐱 🏥‍ ",
+  __typename: "Item"
+}
+
+setList([...(list || []), todo])
 ```
 
 ## Under the hood
 
-Internally `useAppState` uses the hook `useQuery`, [released](https://blog.apollographql.com/apollo-client-now-with-react-hooks-676d116eeae2) in August, 2019, to reactively get the query's state. At same time, a call to `client.writeQuery` is wrapped by its setter .
+Internally `useAppState` uses the hook `useQuery`, [released](https://blog.apollographql.com/apollo-client-now-with-react-hooks-676d116eeae2) in August 2019, to reactively get the query's state. At the same time, a call to `client.writeQuery` is wrapped by its setter.
 
 As long as we are only interested in the cache manipulation, the `useQuery`'s options parameter `fetchPolicy` receives the value `cache-only`.
 
-The source code involves one file with few lines and it is available [here](https://github.com/helloncanella/useAppState/blob/master/src/useAppState.js).
+The source code involves one file with few lines, and it is available [here](https://github.com/helloncanella/useAppState/blob/master/src/useAppState.js).
 
 ## Installation
 
-### 1. "I have an apollo project setup"
+### 1. "I have an apollo project setup."
 
 - Install `useAppState` and `@apollo/react-hooks`.
 
@@ -178,7 +185,7 @@ const App = () => (
 render(<App />, document.getElementById("root"))
 ```
 
-### 2. "I don't have an apollo project setup"
+### 2. "I don't have an apollo project setup."
 
 - Install `useAppState`
 
