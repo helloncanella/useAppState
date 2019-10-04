@@ -1,6 +1,6 @@
 # useAppState
 
-This hook aims to work as a utility to simplify state management, on Apollo Client backed projects.
+Control the whole app's state with the ease of an `useState`.
 
 ## Introduction
 
