@@ -126,7 +126,7 @@ const LIST = gql`
 
 const [list, setList] = useAppState({ query: LIST, category: "to-be-done" })
 
-const todo = { id: "1234", description: "Cat to the vet 🐱 🏥‍ ", __typename: "Item" }
+const todo = { id: "1234", description: "Take the cat to the vet 🐱 🏥‍ ", __typename: "Item" }
 
 setList([ ...(list || []), todo])
 ```
