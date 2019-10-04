@@ -116,29 +116,19 @@ The previous examples focused on the manipulation of data tagged by directive `@
 
 ```jsx
 const LIST = gql`
-  query TodoList($category: String!) {
-    todoList(category: $category) {
+  query TodoList {
+    todoList {
       id
-      description
-      timestamp
+      description      
     }
   }
 `
 
-const [list, setList] = useAppState({
-  query: LIST,
-  variables: { category: "to-be-done" }
-})
+const [list, setList] = useAppState({ query: LIST })
 
-setList([
-  ...list,
-  {
-    id: "1234",
-    description: "Take the cat to the vet 🐱 🏥‍ ",
-    timestamp: new Date().getTime(),
-    __typename: "Item"
-  }
-])
+const todo = { id: "1234", description: "Cat to the vet 🐱 🏥‍ ", __typename: "Item" }
+
+setList([ ...list, todo])
 ```
 
 ## Under the hood
