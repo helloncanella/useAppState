@@ -1,6 +1,6 @@
 # useAppState
 
-Control the whole app's state with the ease of an `useState`.
+Control the whole app's state with the ease of a `useState`.
 
 ## Introduction
 
